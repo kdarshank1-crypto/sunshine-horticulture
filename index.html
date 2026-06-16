@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>Sunshine Horticultures Sdn Bhd — Premium Fresh Vegetables from Cameron Highlands</title>
+  <meta name="description" content="Sunshine Horticultures — premium, sustainably grown vegetables direct from Cameron Highlands, Pahang. Wholesale and retail fresh produce with reliable delivery across Malaysia." />
+  <meta name="keywords" content="fresh vegetables, Cameron Highlands, wholesale vegetables, premium produce, sustainable farming, Malaysia, Pahang" />
+  <meta name="author" content="Sunshine Horticultures Sdn Bhd" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Sunshine Horticultures — Premium Fresh Vegetables" />
+  <meta property="og:description" content="Sustainably grown vegetables direct from the cool highlands of Cameron to your business and home." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="images/hero-farm.png" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="index.css" />
+
+  <!-- Favicon (leaf emoji as data URI) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>" />
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#" class="nav-brand" id="nav-brand">
+        <svg class="leaf-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M16 2C16 2 6 10 6 20C6 25.5 10.5 30 16 30C21.5 30 26 25.5 26 20C26 10 16 2 16 2Z" fill="currentColor" opacity=".8"/>
+          <path d="M16 10V26" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+          <path d="M16 16C13 14 11 12 10 10" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+          <path d="M16 20C19 18 21 16 22 14" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+        Sunshine Horticultures
+      </a>
+
+      <div class="nav-links" id="nav-links">
+        <a href="#about">About</a>
+        <a href="#products">Products</a>
+        <a href="#delivery">Delivery</a>
+        <a href="#contact">Contact</a>
+        <a href="https://wa.me/60195902156" target="_blank" rel="noopener" class="btn btn-primary btn-sm nav-cta" id="nav-order-btn">
+          Order Now
+        </a>
+      </div>
+
+      <div class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== HERO SECTION ===== -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <img src="images/hero-farm.png" alt="Lush green vegetable greenhouse at Cameron Highlands" loading="eager" />
+    </div>
+    <div class="hero-overlay"></div>
+
+    <div class="container hero-content">
+      <div class="hero-badge">
+        <span class="dot"></span>
+        Cameron Highlands, Pahang
+      </div>
+
+      <h1>
+        Cultivating Quality,<br/>
+        Delivering <span class="highlight">Freshness.</span>
+      </h1>
+
+      <p>
+        Premium, sustainably grown vegetables direct from the cool highlands
+        of Cameron to your business and home.
+      </p>
+
+      <div class="hero-actions">
+        <a href="https://wa.me/60195902156" target="_blank" rel="noopener" class="btn btn-primary" id="hero-order-btn">
+          <svg class="wa-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+          </svg>
+          Order Fresh Produce Now
+        </a>
+        <a href="#products" class="btn btn-outline" id="hero-explore-btn">
+          Explore Our Produce
+        </a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <div class="number" id="stat-years">15+</div>
+          <div class="label">Years of Farming</div>
+        </div>
+        <div class="hero-stat">
+          <div class="number" id="stat-products">20+</div>
+          <div class="label">Crop Varieties</div>
+        </div>
+        <div class="hero-stat">
+          <div class="number" id="stat-clients">500+</div>
+          <div class="label">Happy Clients</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TRUST BAR ===== -->
+  <section class="trust-bar" id="trust-bar">
+    <div class="container">
+      <div class="trust-grid">
+
+        <div class="trust-item reveal">
+          <div class="trust-icon">
+            <!-- Leaf / Freshly Harvested -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M11 20A7 7 0 0 1 9.8 6.9C15.5 4.9 17 3.5 19 2c1 2 2 4.5 2 8 0 5.5-4.5 10-10 10Z"/>
+              <path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/>
+            </svg>
+          </div>
+          <div class="trust-text">
+            <h4>100% Freshly Harvested</h4>
+            <p>Picked at peak ripeness</p>
+          </div>
+        </div>
+
+        <div class="trust-item reveal">
+          <div class="trust-icon">
+            <!-- Shield / Quality Assured -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+              <path d="m9 12 2 2 4-4"/>
+            </svg>
+          </div>
+          <div class="trust-text">
+            <h4>Quality Assured</h4>
+            <p>Rigorous quality checks</p>
+          </div>
+        </div>
+
+        <div class="trust-item reveal">
+          <div class="trust-icon">
+            <!-- Recycle / Sustainable -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 3a9 9 0 1 0 9 9"/>
+              <path d="M12 3v6"/>
+              <path d="m16 7-4-4-4 4"/>
+              <circle cx="12" cy="12" r="3"/>
+            </svg>
+          </div>
+          <div class="trust-text">
+            <h4>Sustainable Farming</h4>
+            <p>Eco-friendly practices</p>
+          </div>
+        </div>
+
+        <div class="trust-item reveal">
+          <div class="trust-icon">
+            <!-- Truck / Fast Delivery -->
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/>
+              <path d="M15 18H9"/>
+              <path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14"/>
+              <circle cx="17" cy="18" r="2"/>
+              <circle cx="7" cy="18" r="2"/>
+            </svg>
+          </div>
+          <div class="trust-text">
+            <h4>Fast & Reliable Delivery</h4>
+            <p>Own transport fleet</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT SECTION ===== -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-grid">
+
+        <div class="about-image reveal">
+          <img src="images/hero-farm.png" alt="Sunshine Horticultures greenhouse farm" />
+          <div class="floating-badge">
+            <div class="badge-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                <path d="m9 12 2 2 4-4"/>
+              </svg>
+            </div>
+            <div>
+              <div class="badge-text">Certified Quality</div>
+              <div class="badge-sub">Sustainably Grown</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-content reveal">
+          <span class="section-label">About Us</span>
+          <h2 class="section-heading">From Our Farm<br/>to Your Table.</h2>
+          <p class="section-subtext">
+            At Sunshine Horticultures, we are committed to growing a wide variety of safe,
+            nutritious, and high-quality vegetables. Grown with care using sustainable farming
+            practices, our produce guarantees natural goodness for wholesalers, retailers,
+            restaurants, and homes.
+          </p>
+
+          <div class="about-features">
+            <div class="about-feature">
+              <div class="check">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20 6 9 17l-5-5"/>
+                </svg>
+              </div>
+              <span>Premium highland produce</span>
+            </div>
+            <div class="about-feature">
+              <div class="check">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20 6 9 17l-5-5"/>
+                </svg>
+              </div>
+              <span>Sustainable farming methods</span>
+            </div>
+            <div class="about-feature">
+              <div class="check">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20 6 9 17l-5-5"/>
+                </svg>
+              </div>
+              <span>Wholesale & retail supply</span>
+            </div>
+            <div class="about-feature">
+              <div class="check">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20 6 9 17l-5-5"/>
+                </svg>
+              </div>
+              <span>Own delivery fleet</span>
+            </div>
+          </div>
+
+          <a href="https://wa.me/60195902156" target="_blank" rel="noopener" class="btn btn-primary" id="about-partner-btn">
+            <svg class="wa-icon" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+            Partner With Us
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PRODUCTS SECTION ===== -->
+  <section class="products" id="products">
+    <div class="container">
+
+      <div class="products-header reveal">
+        <span class="section-label">Our Produce</span>
+        <h2 class="section-heading">Our Featured Produce</h2>
+        <p class="section-subtext">
+          Handpicked, sustainably grown, and delivered fresh — explore our finest Cameron Highlands vegetables.
+        </p>
+      </div>
+
+      <div class="products-grid">
+
+        <!-- Product 1: Japanese Cucumber -->
+        <div class="product-card reveal" id="product-cucumber">
+          <div class="card-image">
+            <img src="images/japanese-cucumber.png" alt="Fresh Japanese Cucumbers" loading="lazy" />
+            <span class="card-tag">Fresh Daily</span>
+          </div>
+          <div class="card-body">
+            <h3>Japanese Cucumber</h3>
+            <p class="card-desc">Crisp & fresh, grown in the cool Cameron Highlands climate for exceptional taste and crunch.</p>
+            <div class="card-footer">
+              <div class="packing-info">
+                <strong>10kg</strong> bulk &bull; <strong>200g</strong> retail
+              </div>
+              <a href="https://wa.me/60195902156?text=Hi%2C%20I%20would%20like%20to%20order%20Japanese%20Cucumbers." target="_blank" rel="noopener" class="btn btn-primary btn-sm" id="buy-cucumber">
+                Buy Now
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 2: Cabbage -->
+        <div class="product-card reveal" id="product-cabbage">
+          <div class="card-image">
+            <img src="images/cabbage.png" alt="Premium Green Cabbage" loading="lazy" />
+            <span class="card-tag">Bestseller</span>
+          </div>
+          <div class="card-body">
+            <h3>Cabbage</h3>
+            <p class="card-desc">Natural & quality — dense, leafy heads harvested at peak maturity for wholesalers and retailers.</p>
+            <div class="card-footer">
+              <div class="packing-info">
+                <strong>10kg</strong> bulk &bull; <strong>200g</strong> retail
+              </div>
+              <a href="https://wa.me/60195902156?text=Hi%2C%20I%20would%20like%20to%20order%20Cabbage." target="_blank" rel="noopener" class="btn btn-primary btn-sm" id="buy-cabbage">
+                Buy Now
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 3: Fresh Tomatoes -->
+        <div class="product-card reveal" id="product-tomatoes">
+          <div class="card-image">
+            <img src="images/tomatoes.png" alt="Fresh Ripe Tomatoes" loading="lazy" />
+            <span class="card-tag">Popular</span>
+          </div>
+          <div class="card-body">
+            <h3>Fresh Tomatoes</h3>
+            <p class="card-desc">Carefully grown with natural goodness — vine-ripened for full flavour and vibrant colour.</p>
+            <div class="card-footer">
+              <div class="packing-info">
+                <strong>10kg</strong> bulk &bull; <strong>200g</strong> retail
+              </div>
+              <a href="https://wa.me/60195902156?text=Hi%2C%20I%20would%20like%20to%20order%20Fresh%20Tomatoes." target="_blank" rel="noopener" class="btn btn-primary btn-sm" id="buy-tomatoes">
+                Buy Now
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 4: Si Pak Choy & Sawi -->
+        <div class="product-card reveal" id="product-pakchoy">
+          <div class="card-image">
+            <img src="images/pak-choy-sawi.png" alt="Fresh Pak Choy and Sawi" loading="lazy" />
+            <span class="card-tag">Daily Harvest</span>
+          </div>
+          <div class="card-body">
+            <h3>Si Pak Choy &amp; Sawi</h3>
+            <p class="card-desc">Fresh daily harvest — tender, nutrient-rich Asian greens perfect for every kitchen.</p>
+            <div class="card-footer">
+              <div class="packing-info">
+                <strong>10kg</strong> bulk &bull; <strong>200g</strong> retail
+              </div>
+              <a href="https://wa.me/60195902156?text=Hi%2C%20I%20would%20like%20to%20order%20Si%20Pak%20Choy%20%26%20Sawi." target="_blank" rel="noopener" class="btn btn-primary btn-sm" id="buy-pakchoy">
+                Bulk Order
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product 5: Premium Promo Combo -->
+        <div class="product-card promo-card reveal" id="product-combo">
+          <div class="card-image">
+            <img src="images/combo-box.png" alt="Premium Promo Combo Box" loading="lazy" />
+          </div>
+          <div class="card-body">
+            <span class="card-tag" style="position:static; margin-bottom:1rem;">Limited Promo</span>
+            <h3>Premium Promo Combo Boxes</h3>
+            <p class="card-desc">
+              Get the best of Cameron Highlands in one box — a curated selection of our freshest
+              vegetables, perfect for families, restaurants, and retailers.
+            </p>
+            <div class="promo-features">
+              <div class="promo-feat">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+                Curated mix of seasonal vegetables
+              </div>
+              <div class="promo-feat">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+                Available in family &amp; business sizes
+              </div>
+              <div class="promo-feat">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>
+                Special promotional pricing
+              </div>
+            </div>
+            <a href="https://wa.me/60195902156?text=Hi%2C%20I%20am%20interested%20in%20the%20Premium%20Promo%20Combo%20Box." target="_blank" rel="noopener" class="btn btn-primary" id="buy-combo">
+              <svg class="wa-icon" viewBox="0 0 24 24" fill="currentColor">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+              </svg>
+              Order Combo Box
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="packing-notice reveal">
+        <p>
+          📦 We offer both <strong>10kg bulk packing</strong> for businesses and convenient
+          <strong>200g pre-packs</strong> for retail. Contact us for custom packing solutions.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ===== DELIVERY SECTION ===== -->
+  <section class="delivery" id="delivery">
+    <div class="container">
+      <div class="delivery-grid">
+
+        <div class="delivery-map reveal">
+          <div class="map-visual">
+            <div class="truck-icon">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M14 18V6a2 2 0 0 0-2-2H4a2 2 0 0 0-2 2v11a1 1 0 0 0 1 1h2"/>
+                <path d="M15 18H9"/>
+                <path d="M19 18h2a1 1 0 0 0 1-1v-3.65a1 1 0 0 0-.22-.624l-3.48-4.35A1 1 0 0 0 17.52 8H14"/>
+                <circle cx="17" cy="18" r="2"/>
+                <circle cx="7" cy="18" r="2"/>
+              </svg>
+            </div>
+            <h3 style="font-family:'Outfit',sans-serif; font-size:1.25rem; font-weight:600; color:var(--gray-800); margin-bottom:.5rem;">
+              Sunshine Transport Fleet
+            </h3>
+            <p style="font-size:.88rem; color:var(--gray-500); margin-bottom:1.5rem;">
+              Covering key regions across West Malaysia
+            </p>
+
+            <div class="delivery-regions">
+              <div class="region-pill"><span class="pin"></span> Selangor</div>
+              <div class="region-pill"><span class="pin"></span> Perak</div>
+              <div class="region-pill"><span class="pin"></span> Penang</div>
+              <div class="region-pill"><span class="pin"></span> Kedah</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="delivery-content reveal">
+          <span class="section-label">Logistics</span>
+          <h2 class="section-heading">Delivering Freshness<br/>Across Regions.</h2>
+          <p class="section-subtext">
+            We operate our own Sunshine Transport fleet to ensure safe, reliable,
+            and on-time delivery — from our Cameron Highlands farm straight to your door.
+          </p>
+
+          <div class="delivery-features">
+            <div class="delivery-feat">
+              <div class="feat-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"/>
+                  <path d="m9 12 2 2 4-4"/>
+                </svg>
+              </div>
+              <div>
+                <h4>Temperature Controlled</h4>
+                <p>Cold-chain logistics preserve freshness</p>
+              </div>
+            </div>
+            <div class="delivery-feat">
+              <div class="feat-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"/>
+                  <polyline points="12 6 12 12 16 14"/>
+                </svg>
+              </div>
+              <div>
+                <h4>On-Time Guarantee</h4>
+                <p>Scheduled deliveries you can count on</p>
+              </div>
+            </div>
+            <div class="delivery-feat">
+              <div class="feat-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                </svg>
+              </div>
+              <div>
+                <h4>Safe & Secure</h4>
+                <p>Careful handling from farm to destination</p>
+              </div>
+            </div>
+          </div>
+
+          <a href="https://wa.me/60195902156?text=Hi%2C%20I%20would%20like%20to%20enquire%20about%20delivery%20to%20my%20area." target="_blank" rel="noopener" class="btn btn-primary" id="delivery-enquiry-btn">
+            <svg class="wa-icon" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+            </svg>
+            Enquire About Delivery
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT / FOOTER SECTION ===== -->
+  <section class="contact" id="contact">
+    <div class="container">
+
+      <div class="contact-grid">
+
+        <div class="contact-info reveal">
+          <span class="section-label" style="color: var(--green-400);">Contact</span>
+          <h2 class="section-heading" style="color: var(--white);">Get in Touch.</h2>
+          <p class="section-subtext">
+            Ready to order premium fresh vegetables? Reach out to us today — we'd love to
+            hear from you.
+          </p>
+
+          <div class="contact-details">
+            <!-- Phone -->
+            <div class="contact-detail">
+              <div class="detail-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                </svg>
+              </div>
+              <div class="detail-text">
+                <a href="tel:+60195902156">019-590 2156</a>
+              </div>
+            </div>
+
+            <!-- Email -->
+            <div class="contact-detail">
+              <div class="detail-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="4" width="20" height="16" rx="2"/>
+                  <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+                </svg>
+              </div>
+              <div class="detail-text">
+                <a href="mailto:Sunshinehorticultures8106@gmail.com">Sunshinehorticultures8106@gmail.com</a>
+              </div>
+            </div>
+
+            <!-- Address -->
+            <div class="contact-detail">
+              <div class="detail-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+                  <circle cx="12" cy="10" r="3"/>
+                </svg>
+              </div>
+              <div class="detail-text">
+                Cameron Highlands, Pahang, Malaysia
+              </div>
+            </div>
+          </div>
+
+          <!-- Social Links -->
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="Instagram" id="social-instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="2" y="2" width="20" height="20" rx="5"/>
+                <circle cx="12" cy="12" r="5"/>
+                <circle cx="17.5" cy="6.5" r="1.5" fill="currentColor" stroke="none"/>
+              </svg>
+            </a>
+            <a href="https://wa.me/60195902156" target="_blank" rel="noopener" class="social-link" aria-label="WhatsApp" id="social-whatsapp">
+              <svg viewBox="0 0 24 24" fill="currentColor">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="reveal">
+          <form class="contact-form" id="contact-form">
+            <h3>Send Us a Message</h3>
+
+            <div class="form-group">
+              <label for="form-name">Your Name</label>
+              <input type="text" id="form-name" name="name" placeholder="e.g. Ahmad bin Ibrahim" required />
+            </div>
+
+            <div class="form-group">
+              <label for="form-email">Email Address</label>
+              <input type="email" id="form-email" name="email" placeholder="e.g. ahmad@example.com" required />
+            </div>
+
+            <div class="form-group">
+              <label for="form-message">Your Message</label>
+              <textarea id="form-message" name="message" placeholder="Tell us about your order requirements..." required></textarea>
+            </div>
+
+            <div class="form-submit-row">
+              <button type="submit" class="btn btn-primary" id="form-submit-btn" style="flex:1; justify-content:center;">
+                Send Message
+              </button>
+              <a href="https://wa.me/60195902156" target="_blank" rel="noopener" class="btn btn-outline" id="footer-wa-btn" style="border-color:rgba(255,255,255,.2); color:var(--green-400); flex:1; justify-content:center;">
+                <svg class="wa-icon" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+                </svg>
+                Chat on WhatsApp
+              </a>
+            </div>
+          </form>
+
+          <div class="form-success" id="form-success">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="m9 12 2 2 4-4"/>
+            </svg>
+            <h4>Message Sent!</h4>
+            <p>Thank you for reaching out. We'll get back to you shortly.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bar">
+      <div class="container">
+        <p>&copy; 2026 Sunshine Horticultures Sdn Bhd. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="#hero">Home</a>
+          <a href="#about">About</a>
+          <a href="#products">Products</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FLOATING WHATSAPP ===== -->
+  <a href="https://wa.me/60195902156" target="_blank" rel="noopener" class="whatsapp-float" aria-label="Chat on WhatsApp" id="whatsapp-float-btn">
+    <svg viewBox="0 0 24 24" fill="currentColor">
+      <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+    </svg>
+  </a>
+
+  <!-- ===== JAVASCRIPT ===== -->
+  <script src="index.js"></script>
+</body>
+</html>
