@@ -141,7 +141,7 @@
 
       // Open WhatsApp with the composed message
       setTimeout(() => {
-        window.open(`https://wa.me/60195902156?text=${waText}`, '_blank');
+        window.open(`https://wa.me/60126320259?text=${waText}`, '_blank');
       }, 600);
 
       // Reset after 4 seconds

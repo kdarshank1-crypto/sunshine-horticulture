@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO -->
+  <title>Order Fresh Vegetables — Sunshine Horticultures Sdn Bhd</title>
+  <meta name="description" content="Configure your fresh vegetable orders direct from Cameron Highlands. Select quantities, pay securely via FPX or DuitNow, and get direct shipping coordinates on WhatsApp." />
+  <meta name="author" content="Sunshine Horticultures Sdn Bhd" />
+
+  <!-- Google Fonts -->
+  <link rel="stylesheet" href="index.css" />
+  <link rel="stylesheet" href="order.css" />
+
+  <!-- Favicon (leaf emoji as data URI) -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌿</text></svg>" />
+</head>
+<body>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="navbar scrolled" id="navbar">
+    <div class="container">
+      <a href="index.html" class="nav-brand" id="nav-brand">
+        <svg class="leaf-icon" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M16 2C16 2 6 10 6 20C6 25.5 10.5 30 16 30C21.5 30 26 25.5 26 20C26 10 16 2 16 2Z" fill="currentColor" opacity=".8"/>
+          <path d="M16 10V26" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+          <path d="M16 16C13 14 11 12 10 10" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+          <path d="M16 20C19 18 21 16 22 14" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+        Sunshine Horticultures
+      </a>
+
+      <div class="nav-links" id="nav-links">
+        <a href="index.html#about">About</a>
+        <a href="index.html#products">Products</a>
+        <a href="index.html#delivery">Delivery</a>
+        <a href="index.html#contact">Contact</a>
+        <a href="order.html" class="btn btn-primary btn-sm nav-cta active" id="nav-order-btn" style="background: var(--green-600);">
+          Order Panel
+        </a>
+      </div>
+
+      <div class="nav-toggle" id="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ===== ORDER PANEL WRAPPER ===== -->
+  <main class="order-wrapper order-header-spacing">
+    <div class="container">
+      
+      <!-- Panel Header -->
+      <header style="margin-bottom: 3rem; text-align: center;">
+        <span class="section-label">Interactive Basket</span>
+        <h1 class="section-heading" style="margin-bottom: 0.5rem;">Order Fresh Produce</h1>
+        <p class="section-subtext" style="margin: 0 auto;">
+          Choose your favorite vegetables, select retail or bulk sizes, and checkout securely on the site.
+        </p>
+      </header>
+
+      <!-- Main Order Grid Layout -->
+      <div class="order-grid">
+        
+        <!-- Left Side: Product Selection & Catalog -->
+        <section class="order-catalog">
+          
+          <!-- Category Filter Bar -->
+          <div class="category-container">
+            <div class="category-tabs">
+              <button type="button" class="category-tab active" data-category="all">All Produce</button>
+              <button type="button" class="category-tab" data-category="leafy">Leafy Greens</button>
+              <button type="button" class="category-tab" data-category="vines">Vines & Cucumbers</button>
+              <button type="button" class="category-tab" data-category="combo">Combo Boxes</button>
+            </div>
+          </div>
+
+          <!-- Catalog Card Grid -->
+          <div class="catalog-grid" id="catalog-grid">
+            <!-- Dynamic loading from order.js -->
+          </div>
+
+        </section>
+
+        <!-- Right Side: Sticky Basket Summary -->
+        <aside class="order-cart-summary">
+          <div class="cart-card">
+            <h3 class="cart-title">
+              Your Basket
+              <span class="cart-count">0</span>
+            </h3>
+
+            <!-- Empty State -->
+            <div id="cart-empty" class="cart-empty">
+              <svg fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 0 0-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.116 60.116 0 0 0-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Zm12.75 0a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0Z"></path>
+              </svg>
+              <p>Your basket is empty. Select fresh vegetables to get started!</p>
+            </div>
+
+            <!-- Populated Cart Items -->
+            <div id="cart-items-list" class="cart-items-list" style="display: none;">
+              <!-- Dynamic loading from order.js -->
+            </div>
+
+            <!-- Price Summary totals -->
+            <div class="cart-summary-totals">
+              <div class="summary-row">
+                <span>Subtotal</span>
+                <strong id="cart-subtotal">RM 0.00</strong>
+              </div>
+              <div class="summary-row">
+                <span>Delivery Logistics</span>
+                <strong id="cart-delivery">RM 0.00</strong>
+              </div>
+              <div class="summary-row total">
+                <span>Total Amount</span>
+                <strong id="cart-total">RM 0.00</strong>
+              </div>
+            </div>
+
+            <button type="button" class="btn btn-primary checkout-btn" id="checkout-btn" disabled>
+              Proceed to Checkout
+            </button>
+
+            <div class="free-shipping-indicator">
+              🚚 <strong>Free Delivery</strong> for orders RM 120.00 or above!
+            </div>
+          </div>
+        </aside>
+
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ===== CHECKOUT PROCESS OVERLAY WIZARD MODAL ===== -->
+  <div class="modal-overlay" id="checkout-modal-overlay">
+    <div class="checkout-modal">
+      
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h2>Complete Your Checkout</h2>
+        <button type="button" class="modal-close" id="modal-close-btn" aria-label="Close checkout">
+          <svg fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Modal Body (Steps Container) -->
+      <div class="modal-body">
+        
+        <!-- Step indicators bar -->
+        <div class="steps-indicator">
+          <div class="step-node active" id="step1">
+            <div class="step-circle">1</div>
+            <span class="step-label">Delivery</span>
+          </div>
+          <div class="step-node" id="step2">
+            <div class="step-circle">2</div>
+            <span class="step-label">Payment</span>
+          </div>
+          <div class="step-node" id="step3">
+            <div class="step-circle">3</div>
+            <span class="step-label">Receipt</span>
+          </div>
+        </div>
+
+        <!-- PANEL 1: Delivery Details Form -->
+        <div class="wizard-panel active" id="panel-delivery">
+          <form id="delivery-form" class="form-grid" onsubmit="event.preventDefault();">
+            <div class="form-group">
+              <label for="client-name">Full Name *</label>
+              <input type="text" id="client-name" placeholder="e.g. Ahmad Ibrahim" required />
+            </div>
+            
+            <div class="form-group">
+              <label for="client-phone">WhatsApp Phone Number *</label>
+              <input type="tel" id="client-phone" placeholder="e.g. +60123456789" required />
+            </div>
+
+            <div class="form-group">
+              <label for="client-email">Email Address *</label>
+              <input type="email" id="client-email" placeholder="e.g. ahmad@example.com" required />
+            </div>
+
+            <div class="form-group">
+              <label for="delivery-region">State / Delivery Region *</label>
+              <select id="delivery-region" required>
+                <option value="" disabled selected>Select Region</option>
+                <option value="Selangor">Selangor (Fleet Route)</option>
+                <option value="Perak">Perak (Fleet Route)</option>
+                <option value="Penang">Penang (Fleet Route)</option>
+                <option value="Kedah">Kedah (Fleet Route)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="delivery-date">Preferred Delivery Date *</label>
+              <input type="date" id="delivery-date" required />
+            </div>
+
+            <div class="form-group full-width">
+              <label for="client-address">Full Shipping Address *</label>
+              <textarea id="client-address" rows="3" placeholder="Street number, building name, postcode, city" required></textarea>
+            </div>
+          </form>
+        </div>
+
+        <!-- PANEL 2: Simulated Payments Options -->
+        <div class="wizard-panel" id="panel-payment">
+          <h3 style="font-family:'Outfit',sans-serif; font-size:1.05rem; margin-bottom:1rem; color:var(--gray-800);">Choose simulated payment option:</h3>
+          
+          <div class="payment-methods">
+            <div class="payment-method-card active" id="pm-duitnow">
+              <div class="pm-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                </svg>
+              </div>
+              <span class="pm-title">DuitNow QR Pay</span>
+            </div>
+
+            <div class="payment-method-card" id="pm-fpx">
+              <div class="pm-icon">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <rect x="2" y="5" width="20" height="14" rx="2" ry="2"/>
+                  <line x1="2" y1="10" x2="22" y2="10"/>
+                </svg>
+              </div>
+              <span class="pm-title">FPX Net Banking</span>
+            </div>
+          </div>
+
+          <!-- DuitNow Details UI panel -->
+          <div class="payment-panel active" id="panel-duitnow-details">
+            <div class="qr-container">
+              <div class="qr-amount-pill" id="qr-amount">RM 0.00</div>
+              <p class="qr-desc">Scan this mock DuitNow QR with your bank or e-wallet app. The system will simulate verification when you proceed.</p>
+              
+              <div class="qr-code-box">
+                <svg viewBox="0 0 100 100" style="width: 150px; height: 150px;">
+                  <!-- QR markers -->
+                  <rect x="5" y="5" width="22" height="22" fill="#e11d48" rx="2"/>
+                  <rect x="9" y="9" width="14" height="14" fill="white" rx="1"/>
+                  <rect x="12" y="12" width="8" height="8" fill="#e11d48"/>
+
+                  <rect x="73" y="5" width="22" height="22" fill="#e11d48" rx="2"/>
+                  <rect x="77" y="9" width="14" height="14" fill="white" rx="1"/>
+                  <rect x="80" y="12" width="8" height="8" fill="#e11d48"/>
+
+                  <rect x="5" y="73" width="22" height="22" fill="#e11d48" rx="2"/>
+                  <rect x="9" y="77" width="14" height="14" fill="white" rx="1"/>
+                  <rect x="12" y="80" width="8" height="8" fill="#e11d48"/>
+
+                  <rect x="42" y="42" width="16" height="16" fill="#e11d48" rx="2"/>
+                  <polygon points="50,45 54,49 50,53 46,49" fill="white"/>
+
+                  <!-- Data Noise -->
+                  <rect x="32" y="5" width="6" height="10" fill="#374151"/>
+                  <rect x="45" y="8" width="10" height="4" fill="#374151"/>
+                  <rect x="62" y="12" width="6" height="8" fill="#374151"/>
+                  <rect x="32" y="22" width="10" height="4" fill="#374151"/>
+                  
+                  <rect x="5" y="32" width="12" height="4" fill="#374151"/>
+                  <rect x="12" y="42" width="4" height="12" fill="#374151"/>
+                  <rect x="22" y="48" width="10" height="4" fill="#374151"/>
+
+                  <rect x="72" y="32" width="12" height="4" fill="#374151"/>
+                  <rect x="82" y="42" width="4" height="12" fill="#374151"/>
+                  <rect x="62" y="48" width="10" height="4" fill="#374151"/>
+
+                  <rect x="32" y="72" width="4" height="12" fill="#374151"/>
+                  <rect x="45" y="82" width="12" height="4" fill="#374151"/>
+                  <rect x="62" y="72" width="4" height="8" fill="#374151"/>
+                  <rect x="52" y="82" width="8" height="4" fill="#374151"/>
+                </svg>
+              </div>
+              <span style="font-weight: 700; font-size: 0.8rem; color: #e11d48;">Merchant: SUNSHINE HORTICULTURES SDN BHD</span>
+            </div>
+          </div>
+
+          <!-- FPX Details UI panel -->
+          <div class="payment-panel" id="panel-fpx-details">
+            <div class="fpx-container">
+              <div class="form-group">
+                <label for="fpx-bank">Choose your Retail Bank</label>
+                <select id="fpx-bank">
+                  <option value="Maybank2u" selected>Maybank (Maybank2u)</option>
+                  <option value="CIMB Clicks">CIMB Bank (CIMB Clicks)</option>
+                  <option value="Public Bank">Public Bank</option>
+                  <option value="RHB Now">RHB Bank (RHB Now)</option>
+                  <option value="Hong Leong Connect">Hong Leong Bank</option>
+                  <option value="AmOnline">AmBank (AmOnline)</option>
+                  <option value="Bank Islam">Bank Islam</option>
+                  <option value="Alliance Online">Alliance Bank</option>
+                </select>
+              </div>
+              <div class="bank-logo-grid">
+                <div class="bank-logo-item" style="font-size: 0.65rem; font-weight: 800; color: #d97706; border-color: #fef08a;">MAYBANK</div>
+                <div class="bank-logo-item" style="font-size: 0.65rem; font-weight: 800; color: #dc2626; border-color: #fca5a5;">CIMB</div>
+                <div class="bank-logo-item" style="font-size: 0.65rem; font-weight: 800; color: #991b1b; border-color: #fecaca;">PBE</div>
+                <div class="bank-logo-item" style="font-size: 0.65rem; font-weight: 800; color: #2563eb; border-color: #bfdbfe;">RHB</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PANEL 3: Loading Secure Simulator -->
+        <div class="wizard-panel" id="panel-processing">
+          <div class="processing-screen">
+            <div class="spinner"></div>
+            <h3 id="processing-text">Connecting to banking gateway...</h3>
+            <p>Please do not refresh or close this modal window.</p>
+          </div>
+        </div>
+
+        <!-- PANEL 4: Receipt Success & WhatsApp integration -->
+        <div class="wizard-panel" id="panel-success">
+          <div class="success-screen">
+            <div class="success-icon-wrap">
+              <svg fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"></path>
+              </svg>
+            </div>
+            <h3>Payment Received!</h3>
+            <p>Your mock order transaction was completed successfully. Please click the button below to forward your official receipt confirmation straight to WhatsApp.</p>
+            
+            <!-- receipt details populated by js -->
+            <div class="receipt-summary-box" id="receipt-summary-container"></div>
+
+            <button type="button" class="btn btn-whatsapp-send" id="btn-whatsapp-send">
+              <svg class="wa-icon" viewBox="0 0 24 24" fill="currentColor" style="width: 22px; height: 22px; margin-right: 8px; vertical-align: middle;">
+                <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/>
+              </svg>
+              Confirm Order on WhatsApp
+            </button>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Modal Action Buttons Footer -->
+      <div class="modal-footer">
+        <button type="button" class="footer-btn btn-back" id="btn-back" style="visibility: hidden;">Back</button>
+        <button type="button" class="footer-btn btn-continue" id="btn-continue">Continue to Payment</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ===== SCRIPTS ===== -->
+  <script src="order.js"></script>
+</body>
+</html>
