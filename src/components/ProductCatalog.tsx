@@ -31,7 +31,7 @@ const FALLBACK_PRODUCTS: Product[] = [
     name: "Premium AAA Sweet Corn",
     description: "Exceptionally sweet and juicy farm-fresh premium grade sweet corn.",
     pricing: [{ id: "piece", label: "1 Piece", price: 3.50 }],
-    image_url: "/images/combo-box.png",
+    image_url: "/images/sweet-corn.png",
     stock_status: "in_stock",
     tag: "Premium",
     created_at: new Date().toISOString(),

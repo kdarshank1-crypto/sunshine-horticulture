@@ -96,7 +96,7 @@ insert into public.products (name, description, pricing, image_url, stock_status
     'Premium AAA Sweet Corn',
     'Exceptionally sweet and juicy farm-fresh premium grade sweet corn.',
     '[{"id": "piece", "label": "1 Piece", "price": 3.50}]',
-    '/images/combo-box.png',
+    '/images/sweet-corn.png',
     'in_stock',
     'Premium'
   ),
