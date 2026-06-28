@@ -112,7 +112,7 @@ export default function ProductCatalog() {
       { threshold: 0.1 }
     );
 
-    const cards = ref.current?.querySelectorAll(".product-card");
+    const cards = ref.current?.querySelectorAll(".product-wrapper");
     cards?.forEach((el) => observer.observe(el));
 
     return () => observer.disconnect();
@@ -150,7 +150,7 @@ export default function ProductCatalog() {
             : products.map((product, i) => (
                 <div
                   key={product.id}
-                  className="opacity-0 translate-y-6 transition-all duration-600"
+                  className="product-wrapper opacity-0 translate-y-6 transition-all duration-600"
                   style={{ transitionDelay: `${i * 80}ms` }}
                 >
                   <ProductCard product={product} />
