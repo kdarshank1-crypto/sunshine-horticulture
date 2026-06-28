@@ -14,7 +14,8 @@ function getStripe() {
 interface CartItemPayload {
   productId: string;
   name: string;
-  packType: "retail" | "bulk";
+  packType: string;
+  packLabel: string;
   price: number;
   quantity: number;
   imageUrl: string;
@@ -96,6 +97,7 @@ export async function POST(req: NextRequest) {
       product_id: item.productId,
       quantity: item.quantity,
       pack_type: item.packType,
+      pack_label: item.packLabel,
       price_at_time_of_order: item.price,
     }));
 
@@ -123,7 +125,7 @@ export async function POST(req: NextRequest) {
           currency: "myr",
           product_data: {
             name: item.name,
-            description: `${item.packType === "retail" ? "200g Retail Pack" : "10kg Bulk Pack"}`,
+            description: item.packLabel,
             images: item.imageUrl.startsWith("http")
               ? [item.imageUrl]
               : [`${appUrl}${item.imageUrl}`],

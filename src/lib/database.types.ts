@@ -1,9 +1,14 @@
+export interface PricingTier {
+  id: string;
+  label: string;
+  price: number;
+}
+
 export interface Product {
   id: string;
   name: string;
   description: string | null;
-  price_retail: number;
-  price_bulk: number;
+  pricing: PricingTier[];
   image_url: string | null;
   stock_status: "in_stock" | "low_stock" | "out_of_stock";
   tag: string | null;
@@ -35,16 +40,18 @@ export interface OrderItem {
   order_id: string;
   product_id: string;
   quantity: number;
-  pack_type: "retail" | "bulk";
+  pack_type: string;
+  pack_label: string;
   price_at_time_of_order: number;
 }
 
-export type PackType = "retail" | "bulk";
+export type PackType = string;
 
 export interface CartItem {
   productId: string;
   name: string;
   packType: PackType;
+  packLabel: string;
   price: number;
   quantity: number;
   imageUrl: string;
@@ -88,7 +95,8 @@ export interface Database {
           order_id: string;
           product_id: string;
           quantity: number;
-          pack_type: "retail" | "bulk";
+          pack_type: string;
+          pack_label: string;
           price_at_time_of_order: number;
         };
         Update: Partial<Omit<OrderItem, "id">>;

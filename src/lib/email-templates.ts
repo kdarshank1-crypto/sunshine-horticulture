@@ -17,7 +17,7 @@ export function generateCustomerReceiptHTML(
         </td>
         <td style="padding: 12px 16px; border-bottom: 1px solid #f0f0f0; font-size: 14px; color: #333;">
           Product #${item.product_id.slice(0, 8)}
-          <br/><span style="color: #888; font-size: 12px;">${item.pack_type === "retail" ? "200g Retail" : "10kg Bulk"}</span>
+          <br/><span style="color: #888; font-size: 12px;">${item.pack_label}</span>
         </td>
         <td style="padding: 12px 16px; border-bottom: 1px solid #f0f0f0; font-size: 14px; color: #333; text-align: right;">
           RM ${(item.price_at_time_of_order * item.quantity).toFixed(2)}
@@ -118,7 +118,7 @@ export function generateAdminAlertHTML(
       (item) =>
         `<li style="padding: 6px 0; font-size: 14px; color: #333; border-bottom: 1px solid #f0f0f0;">
           <strong>${item.quantity}×</strong> Product #${item.product_id.slice(0, 8)} 
-          (${item.pack_type === "retail" ? "200g" : "10kg"}) — 
+          (${item.pack_label}) — 
           RM ${(item.price_at_time_of_order * item.quantity).toFixed(2)}
         </li>`
     )

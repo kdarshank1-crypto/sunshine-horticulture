@@ -117,7 +117,7 @@ export default function CartDrawer() {
                           {item.name}
                         </h4>
                         <span className="text-xs text-gray-400 capitalize">
-                          {item.packType === "retail" ? "200g Retail" : "10kg Bulk"}
+                          {item.packLabel}
                         </span>
                       </div>
                       <button

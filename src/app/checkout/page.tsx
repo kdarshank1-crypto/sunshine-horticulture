@@ -104,6 +104,7 @@ export default function CheckoutPage() {
             productId: item.productId,
             name: item.name,
             packType: item.packType,
+            packLabel: item.packLabel,
             price: item.price,
             quantity: item.quantity,
             imageUrl: item.imageUrl,
@@ -353,7 +354,7 @@ export default function CheckoutPage() {
                           <div className="flex-1 min-w-0">
                             <p className="text-sm font-medium text-surface-dark truncate">{item.name}</p>
                             <p className="text-xs text-gray-400">
-                              {item.packType === "retail" ? "200g" : "10kg"} × {item.quantity}
+                              {item.packLabel} × {item.quantity}
                             </p>
                           </div>
                           <span className="text-sm font-semibold text-surface-dark shrink-0">

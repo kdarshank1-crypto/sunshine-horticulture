@@ -10,13 +10,14 @@ interface ProductCardProps {
 }
 
 export default function ProductCard({ product }: ProductCardProps) {
-  const [packType, setPackType] = useState<PackType>("retail");
+  const [packType, setPackType] = useState<PackType>(product.pricing[0]?.id || "");
   const [quantity, setQuantity] = useState(1);
   const [added, setAdded] = useState(false);
   const { addItem } = useCart();
 
-  const price = packType === "retail" ? product.price_retail : product.price_bulk;
-  const packLabel = packType === "retail" ? "200g Retail" : "10kg Bulk";
+  const currentPricing = product.pricing.find((p) => p.id === packType) || product.pricing[0];
+  const price = currentPricing?.price || 0;
+  const packLabel = currentPricing?.label || "";
   const isOutOfStock = product.stock_status === "out_of_stock";
 
   const handleAddToCart = () => {
@@ -26,6 +27,7 @@ export default function ProductCard({ product }: ProductCardProps) {
       productId: product.id,
       name: product.name,
       packType,
+      packLabel,
       price,
       quantity,
       imageUrl: product.image_url || "/images/combo-box.png",
@@ -68,21 +70,23 @@ export default function ProductCard({ product }: ProductCardProps) {
         </p>
 
         {/* Pack Type Toggle */}
-        <div className="flex gap-2 mb-4">
-          {(["retail", "bulk"] as PackType[]).map((type) => (
-            <button
-              key={type}
-              onClick={() => setPackType(type)}
-              className={`flex-1 py-2 px-3 rounded-lg text-xs font-semibold transition-all duration-200 cursor-pointer border ${
-                packType === type
-                  ? "bg-brand-50 border-brand-300 text-brand-700"
-                  : "bg-white border-gray-200 text-gray-500 hover:border-gray-300"
-              }`}
-            >
-              {type === "retail" ? "200g Retail" : "10kg Bulk"}
-            </button>
-          ))}
-        </div>
+        {product.pricing.length > 1 && (
+          <div className="flex flex-wrap gap-2 mb-4">
+            {product.pricing.map((tier) => (
+              <button
+                key={tier.id}
+                onClick={() => setPackType(tier.id)}
+                className={`flex-1 py-2 px-3 rounded-lg text-xs font-semibold transition-all duration-200 cursor-pointer border ${
+                  packType === tier.id
+                    ? "bg-brand-50 border-brand-300 text-brand-700"
+                    : "bg-white border-gray-200 text-gray-500 hover:border-gray-300"
+                }`}
+              >
+                {tier.label}
+              </button>
+            ))}
+          </div>
+        )}
 
         {/* Price + Quantity + Add */}
         <div className="flex items-center justify-between gap-3">
