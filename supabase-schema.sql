@@ -104,7 +104,7 @@ insert into public.products (name, description, pricing, image_url, stock_status
     'Red & Green Capsicum',
     'Crunchy, sweet, and vibrant bell peppers for salads, stir-fries, and roasting.',
     '[{"id": "retail", "label": "200g Retail", "price": 6.00}, {"id": "bulk", "label": "10kg Bulk", "price": 110.00}]',
-    '/images/combo-box.png',
+    '/images/capsicum.png',
     'in_stock',
     null
   ),
@@ -112,7 +112,7 @@ insert into public.products (name, description, pricing, image_url, stock_status
     'Green Coral Lettuce',
     'Crispy, fresh farm-direct greens perfect for salads and sandwiches.',
     '[{"id": "retail", "label": "200g Retail", "price": 5.00}, {"id": "bulk", "label": "10kg Bulk", "price": 90.00}]',
-    '/images/pak-choy-sawi.png',
+    '/images/lettuce.png',
     'in_stock',
     'Fresh Daily'
   ),
@@ -120,7 +120,7 @@ insert into public.products (name, description, pricing, image_url, stock_status
     'Cherry Tomato',
     'Premium sweet variety cherry tomatoes bursting with flavor.',
     '[{"id": "retail", "label": "200g Retail", "price": 6.00}, {"id": "bulk", "label": "10kg Bulk", "price": 105.00}]',
-    '/images/tomatoes.png',
+    '/images/cherry-tomato.png',
     'in_stock',
     'Premium'
   ),
@@ -128,7 +128,7 @@ insert into public.products (name, description, pricing, image_url, stock_status
     'Eggplant (Brinjal)',
     'Glossy, tender farm-fresh eggplants.',
     '[{"id": "retail", "label": "200g Retail", "price": 4.50}, {"id": "bulk", "label": "10kg Bulk", "price": 85.00}]',
-    '/images/combo-box.png',
+    '/images/eggplant.png',
     'in_stock',
     null
   ),
@@ -136,7 +136,7 @@ insert into public.products (name, description, pricing, image_url, stock_status
     'Chili',
     'Spicy, vibrant fresh chilies to add heat to your dishes.',
     '[{"id": "retail", "label": "200g Retail", "price": 8.00}, {"id": "bulk", "label": "10kg Bulk", "price": 150.00}]',
-    '/images/combo-box.png',
+    '/images/chili.png',
     'in_stock',
     null
   ),
@@ -152,7 +152,7 @@ insert into public.products (name, description, pricing, image_url, stock_status
     'Okra (Lady''s Finger)',
     'Tender, young okra pods freshly harvested.',
     '[{"id": "retail", "label": "200g Retail", "price": 5.00}, {"id": "bulk", "label": "10kg Bulk", "price": 90.00}]',
-    '/images/combo-box.png',
+    '/images/okra.png',
     'in_stock',
     null
   ),
@@ -160,7 +160,7 @@ insert into public.products (name, description, pricing, image_url, stock_status
     'Long Beans',
     'Crisp, long green beans direct from our highland farms.',
     '[{"id": "retail", "label": "200g Retail", "price": 4.50}, {"id": "bulk", "label": "10kg Bulk", "price": 80.00}]',
-    '/images/combo-box.png',
+    '/images/long-beans.png',
     'in_stock',
     null
   ),
@@ -168,7 +168,7 @@ insert into public.products (name, description, pricing, image_url, stock_status
     'Bitter Gourd',
     'Fresh bitter gourd, packed with nutrients.',
     '[{"id": "retail", "label": "200g Retail", "price": 5.50}, {"id": "bulk", "label": "10kg Bulk", "price": 95.00}]',
-    '/images/combo-box.png',
+    '/images/bitter-gourd.png',
     'in_stock',
     null
   ),
