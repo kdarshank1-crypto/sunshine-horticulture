@@ -51,8 +51,8 @@ export default function ContactSection() {
                     <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
                   </svg>
                 </div>
-                <a href="tel:+60126320259" className="text-white/80 hover:text-brand-400 transition-colors text-sm">
-                  012-632 0259
+                <a href="tel:+60195902156" className="text-white/80 hover:text-brand-400 transition-colors text-sm">
+                  019-590 2156
                 </a>
               </div>
 
@@ -64,8 +64,8 @@ export default function ContactSection() {
                     <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
                   </svg>
                 </div>
-                <a href="mailto:jabiruagriculture@gmail.com" className="text-white/80 hover:text-brand-400 transition-colors text-sm break-all">
-                  jabiruagriculture@gmail.com
+                <a href="mailto:sunshinehorticulture@gmail.com" className="text-white/80 hover:text-brand-400 transition-colors text-sm break-all">
+                  sunshinehorticulture@gmail.com
                 </a>
               </div>
 
@@ -96,7 +96,7 @@ export default function ContactSection() {
                 </svg>
               </a>
               <a
-                href="https://wa.me/60126320259"
+                href="https://wa.me/60195902156"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 rounded-xl bg-white/10 flex items-center justify-center text-white/60 hover:text-brand-400 hover:bg-white/20 transition-all"
@@ -136,7 +136,7 @@ export default function ContactSection() {
                     Send Message
                   </button>
                   <a
-                    href="https://wa.me/60126320259"
+                    href="https://wa.me/60195902156"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn-outline !border-white/20 !text-brand-400 flex-1 justify-center"

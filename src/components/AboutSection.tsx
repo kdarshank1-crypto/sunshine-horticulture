@@ -41,7 +41,7 @@ export default function AboutSection() {
             <div className="rounded-2xl overflow-hidden shadow-2xl shadow-brand-900/10">
               <Image
                 src="/images/hero-farm.png"
-                alt="Jabiru Agriculture greenhouse farm"
+                alt="Sunshine Horticulture greenhouse farm"
                 width={640}
                 height={480}
                 className="w-full h-auto object-cover"
@@ -71,7 +71,7 @@ export default function AboutSection() {
               to Your Table.
             </h2>
             <p className="section-subtext mb-8">
-              At Jabiru Agriculture, we are committed to growing a wide variety of safe,
+              At Sunshine Horticulture, we are committed to growing a wide variety of safe,
               nutritious, and high-quality vegetables. Grown with care using sustainable farming
               practices, our produce guarantees natural goodness for wholesalers, retailers,
               restaurants, and homes.
@@ -91,7 +91,7 @@ export default function AboutSection() {
             </div>
 
             <a
-              href="https://wa.me/60126320259"
+              href="https://wa.me/60195902156"
               target="_blank"
               rel="noopener noreferrer"
               className="btn-primary"

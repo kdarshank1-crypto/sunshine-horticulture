@@ -33,16 +33,15 @@ function OrderSuccessContent() {
         Order Confirmed!
       </h1>
       <p className="text-gray-500 mb-2 leading-relaxed">
-        Thank you for your order with <strong className="text-brand-700">Jabiru Agriculture</strong>.
+        Thank you for your order with <strong className="text-brand-700">Sunshine Horticulture</strong>.
       </p>
       <p className="text-sm text-gray-400 mb-8">
-        We&apos;ve sent a confirmation email with your order details and tracking information.
-        Our team will begin preparing your fresh produce for delivery.
+        We&apos;ve sent your order details via WhatsApp. Our team will begin preparing your fresh produce for delivery.
       </p>
 
       {sessionId && (
         <div className="bg-gray-50 rounded-xl p-4 mb-8 text-left">
-          <p className="text-xs text-gray-400 mb-1">Session Reference</p>
+          <p className="text-xs text-gray-400 mb-1">Order Reference</p>
           <p className="text-xs font-mono text-gray-500 break-all">{sessionId}</p>
         </div>
       )}
@@ -52,7 +51,7 @@ function OrderSuccessContent() {
           Back to Home
         </Link>
         <a
-          href="https://wa.me/60126320259?text=Hi%2C%20I%20just%20placed%20an%20order%20and%20would%20like%20to%20check%20on%20it."
+          href="https://wa.me/60195902156?text=Hi%2C%20I%20just%20placed%20an%20order%20and%20would%20like%20to%20check%20on%20it."
           target="_blank"
           rel="noopener noreferrer"
           className="btn-outline flex-1 justify-center"

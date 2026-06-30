@@ -78,7 +78,7 @@ export default function DeliverySection() {
               </div>
 
               <h3 className="font-heading text-xl font-bold text-surface-dark text-center mb-1.5">
-                Jabiru Transport Fleet
+                Sunshine Transport Fleet
               </h3>
               <p className="text-sm text-gray-500 text-center mb-6">
                 Covering key regions across West Malaysia
@@ -107,7 +107,7 @@ export default function DeliverySection() {
               Across Regions.
             </h2>
             <p className="section-subtext mb-8">
-              We operate our own Jabiru Transport fleet to ensure safe, reliable,
+              We operate our own Sunshine Transport fleet to ensure safe, reliable,
               and on-time delivery — from our Cameron Highlands farm straight to your door.
             </p>
 
@@ -126,7 +126,7 @@ export default function DeliverySection() {
             </div>
 
             <a
-              href="https://wa.me/60126320259?text=Hi%2C%20I%20would%20like%20to%20enquire%20about%20delivery%20to%20my%20area."
+              href="https://wa.me/60195902156?text=Hi%2C%20I%20would%20like%20to%20enquire%20about%20delivery%20to%20my%20area."
               target="_blank"
               rel="noopener noreferrer"
               className="btn-primary"

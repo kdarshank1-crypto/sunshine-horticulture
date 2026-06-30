@@ -62,7 +62,7 @@ export default function Navbar() {
               scrolled ? "text-surface-dark" : "text-white"
             }`}
           >
-            Jabiru Agriculture
+            Sunshine Horticulture
           </span>
         </Link>
 

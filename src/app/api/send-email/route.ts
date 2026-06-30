@@ -30,19 +30,19 @@ export async function POST(req: NextRequest) {
       return NextResponse.json({ message: "Emails skipped — Resend not configured" });
     }
 
-    const adminEmail = process.env.ADMIN_EMAIL || "admin@jabiruagriculture.com";
+    const adminEmail = process.env.ADMIN_EMAIL || "admin@sunshinehorticulture.com";
 
     // Send customer receipt
     const customerEmailResult = await resend.emails.send({
-      from: "Jabiru Agriculture <orders@jabiruagriculture.com>",
+      from: "Sunshine Horticulture <orders@sunshinehorticulture.com>",
       to: order.customer_email,
-      subject: `Order Confirmed — Jabiru Agriculture #${order.id.slice(0, 8)}`,
+      subject: `Order Confirmed — Sunshine Horticulture #${order.id.slice(0, 8)}`,
       html: generateCustomerReceiptHTML(order, orderItems),
     });
 
     // Send admin alert
     const adminEmailResult = await resend.emails.send({
-      from: "Jabiru Orders <orders@jabiruagriculture.com>",
+      from: "Sunshine Orders <orders@sunshinehorticulture.com>",
       to: adminEmail,
       subject: `🔔 New Order: RM ${order.total_amount.toFixed(2)} from ${order.customer_name}`,
       html: generateAdminAlertHTML(order, orderItems),

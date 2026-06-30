@@ -39,7 +39,7 @@ export function generateCustomerReceiptHTML(
           <!-- Header -->
           <tr>
             <td style="background: linear-gradient(135deg, #16a34a, #15803d); padding: 32px; text-align: center;">
-              <h1 style="margin: 0; color: #ffffff; font-size: 24px; font-weight: 700;">🌿 Jabiru Agriculture</h1>
+              <h1 style="margin: 0; color: #ffffff; font-size: 24px; font-weight: 700;">🌿 Sunshine Horticulture</h1>
               <p style="margin: 8px 0 0; color: rgba(255,255,255,0.8); font-size: 14px;">Cameron Highlands, Pahang</p>
             </td>
           </tr>
@@ -90,10 +90,10 @@ export function generateCustomerReceiptHTML(
           <tr>
             <td style="padding: 24px 32px; border-top: 1px solid #f0f0f0; text-align: center;">
               <p style="margin: 0; color: #999; font-size: 12px;">
-                Need help? WhatsApp us at <a href="https://wa.me/60126320259" style="color: #16a34a; text-decoration: none;">012-632 0259</a>
+                Need help? WhatsApp us at <a href="https://wa.me/60195902156" style="color: #16a34a; text-decoration: none;">019-590 2156</a>
               </p>
               <p style="margin: 8px 0 0; color: #ccc; font-size: 11px;">
-                © ${new Date().getFullYear()} Jabiru Agriculture Sdn Bhd. All rights reserved.
+                © ${new Date().getFullYear()} Sunshine Horticulture. All rights reserved.
               </p>
             </td>
           </tr>
@@ -138,7 +138,7 @@ export function generateAdminAlertHTML(
           <tr>
             <td style="background: #1e293b; padding: 24px 32px;">
               <h1 style="margin: 0; color: #ffffff; font-size: 18px;">🔔 New Order Received</h1>
-              <p style="margin: 4px 0 0; color: rgba(255,255,255,0.6); font-size: 13px;">Jabiru Agriculture — Order Fulfillment</p>
+              <p style="margin: 4px 0 0; color: rgba(255,255,255,0.6); font-size: 13px;">Sunshine Horticulture — Order Fulfillment</p>
             </td>
           </tr>
 
@@ -201,7 +201,7 @@ export function generateAdminAlertHTML(
           <tr>
             <td style="padding: 16px 32px; border-top: 1px solid #f0f0f0; text-align: center;">
               <p style="margin: 0; color: #999; font-size: 11px;">
-                This is an automated notification from Jabiru Agriculture.
+                This is an automated notification from Sunshine Horticulture.
               </p>
             </td>
           </tr>

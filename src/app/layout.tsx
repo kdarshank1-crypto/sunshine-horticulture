@@ -16,14 +16,14 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "Jabiru Agriculture — Premium Fresh Vegetables from Cameron Highlands",
+  title: "Sunshine Horticulture — Premium Fresh Vegetables from Cameron Highlands",
   description:
-    "Jabiru Agriculture — premium, sustainably grown vegetables direct from Cameron Highlands, Pahang. Wholesale and retail fresh produce with reliable delivery across West Malaysia.",
+    "Sunshine Horticulture — premium, sustainably grown vegetables direct from Cameron Highlands, Pahang. Wholesale and retail fresh produce with reliable delivery across West Malaysia.",
   keywords:
-    "fresh vegetables, Cameron Highlands, wholesale vegetables, premium produce, sustainable farming, Malaysia, Pahang, Jabiru Agriculture",
-  authors: [{ name: "Jabiru Agriculture Sdn Bhd" }],
+    "fresh vegetables, Cameron Highlands, wholesale vegetables, premium produce, sustainable farming, Malaysia, Pahang, Sunshine Horticulture",
+  authors: [{ name: "Sunshine Horticulture" }],
   openGraph: {
-    title: "Jabiru Agriculture — Premium Fresh Vegetables",
+    title: "Sunshine Horticulture — Premium Fresh Vegetables",
     description:
       "Sustainably grown vegetables direct from the cool highlands of Cameron to your business and home.",
     type: "website",

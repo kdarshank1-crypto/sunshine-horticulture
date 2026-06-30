@@ -170,14 +170,14 @@ export default function CartDrawer() {
                 RM {subtotal.toFixed(2)}
               </span>
             </div>
-            <p className="text-xs text-gray-400">Shipping calculated at checkout.</p>
+            <p className="text-xs text-gray-400">Shipping details confirmed via WhatsApp.</p>
             <Link
               href="/checkout"
               onClick={closeCart}
               className="btn-primary w-full justify-center !py-3.5 !text-base"
               id="checkout-btn"
             >
-              Proceed to Checkout
+              Proceed to Order
             </Link>
           </div>
         )}
